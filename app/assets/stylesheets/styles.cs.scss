@@ -4,7 +4,7 @@
 
 $navbarBackgroundHighlight: white;
 $navbarBackground: white;
-$btnPrimaryBackground: green;
+/* $btnPrimaryBackground: green; */
 
 
 @import 'bootstrap';
@@ -13,6 +13,7 @@ $btnPrimaryBackground: green;
 
 body {
 	margin-top: 30px;
+	margin-bottom: 200px
 }
 
 /*
@@ -23,6 +24,5 @@ body {
 */
 
 .footer {
-	margin-top: 200px;
-	/* background-color: $grayLight; */
+	background-color: #AACCFF;
 }
