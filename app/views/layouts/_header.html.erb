@@ -17,16 +17,19 @@
         <!-- .nav, .navbar-search, .navbar-form, etc -->
 
 		    <ul class="nav">
-			   <li><%= link_to "Home", root_path %></li>
-			   <li><%= link_to "About", about_path %></li>
+			   <li><%= link_to "首頁", root_path %></li>
+         <li><%= link_to "聖經主題", topics_path %></li>
+         <li><%= link_to "主題讀經", topic_verse_path %></li>
+         <li><%= link_to "書卷讀經", book_verse_path %></li>
+			   <li><%= link_to "關於", about_path %></li>
 		    </ul>
 
 		    <ul class="nav pull-right">
         <% if user_signed_in? %>
-          <li><%= link_to "Edit Profile", edit_user_registration_path %></li>
-          <li><%= link_to "Logout", destroy_user_session_path, method: :delete %></li>
+          <li><%= link_to current_user.name, edit_user_registration_path %></li>
+          <li><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
         <% else %>
-			   <li><%= link_to "Login", new_user_session_path %></li>
+			   <li><%= link_to "登入", new_user_session_path %></li>
         <% end %>
 		    </ul>
 

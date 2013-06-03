@@ -6,7 +6,9 @@
 
 	<h2>歡迎來到聖經合部分題</h2>
 
-	<p><%=link_to "Sign Up", new_user_registration_path, class: "btn btn-large btn-primary" %> for having your personal reading pages such as highlights, notes, reading progress, sharing with friends, etc. </p>
-	<p><%=link_to "Pass By", "#", class: "btn btn-large btn-primary" %> to go ahead reading </p>
+	<p><%=link_to "新人註冊", new_user_registration_path, class: "btn btn-large btn-block btn-primary" %> 你可以享有各樣個人讀經的功能，建立分享小組。 </p>
+	<p>直接開始<%=link_to "書卷讀經", book_verse_path, class: "btn btn-large btn-block btn-primary" %>或者
+	<%=link_to "主題讀經", topic_verse_path, class: "btn btn-large btn-block btn-primary" %>
+	</p>
 
 </div>

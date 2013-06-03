@@ -8,6 +8,11 @@ MaxBibleReader2::Application.routes.draw do
   root :to => 'pages#index'
   
   get 'about' => 'pages#about'
+  get 'topics' => 'pages#topics'
+  get 'topic_verse' => 'pages#topic_verse'
+  get 'book_verse' => 'pages#book_verse'
+  get 'top_outline' => 'pages#top_outline'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
