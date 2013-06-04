@@ -25,13 +25,14 @@
 		    </ul>
 
 		    <ul class="nav pull-right">
-          <li><%= link_to "聯係我們", "#" %></li>
+
         <% if user_signed_in? %>
           <li><%= link_to current_user.name, edit_user_registration_path %></li>
           <li><%= link_to "登出", destroy_user_session_path, method: :delete %></li>
-        <% else %>
-			   <li><%= link_to "登入", new_user_session_path %></li>
-        <% end %>
+            <% else %>
+    			   <li><%= link_to "登入", new_user_session_path %></li>
+            <% end %>
+          <li><%= link_to "聯係我們", "#" %></li>
 		    </ul>
 
       </div>
